@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <link rel="icon" type="image/png" href="./googlePage/logo.png" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+ 
+
+
+</script>
+    <style>
+      body{
+         font-family: arial,sans-serif;
+      }
+     .middle{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        /* top:60px; */
+        row-gap: 26px;
+       
+     } 
+     .padding-middle{
+      padding-top:161px;
+        padding-bottom: 24px; 
+     }   
+     .input-container{
+         /* width:592px;  */
+         width: 40%;
+        height: 47px;
+        /* height: 55px; */
+        text-align: center;
+        border-radius: 30px;
+        border:1px solid rgb(234,236,238);
+        box-sizing: border-box;
+     }
+      .input-wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+     } 
+     #text-box{
+        border:none;
+        width: 100%;
+        font-size: 16px;
+        outline: none;
+        font-family: arial,sans-serif;
+     }
+     #sec1{
+        width:10%;
+        position: relative;
+    top: -4px;
+ 
+     }
+     #sec2{
+        width:75%;
+        height: 100%;
+        position: relative;
+    top: -4px;
+
+     }
+     #text-box:hover{
+      outline: none;  
+      }
+     #sec3{
+        width:7%;
+        position: relative;
+    top: -4px;
+
+     }
+     #sec4{
+        width:10%;
+        position: relative;
+    top: -4px;
+     right:5px;
+     }
+     #sec5{
+        width:7%;
+        position: relative; 
+        top: 4px;
+
+     }
+     .gap{
+      column-gap:20px;
+     }
+
+     button{
+      color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+     }
+     button:hover{
+      box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+    border-radius: 3px;
+    /* border:1px solid rgb(66,133,244); */
+     }
+     .onSearchClick{
+     border: 1px solid rgb(66,133,244);
+     }
+     .input-container:hover{
+       box-shadow: 0 0 15px 2px rgb(222,222,223); 
+     }
+     #text-box:hover{
+      border:none;
+      outline: none;
+      box-shadow: none;
+      
+     }
+     :root{
+      font-family: "Font Awesome 6 Free";
+    /* --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free"; */
+     }
+     #gws-output-pages-elements-homepage_additional_languages__als{font-size:small;}
+     #SIvCob{color:#4d5156;display:inline-block;line-height:28px;}
+     #SIvCob a{padding:0 3px;}
+     .H6sW5{display:inline-block;margin:0 2px;white-space:nowrap}
+     .z4hgWe{display:inline-block;margin:0 2px}
+     .search-section{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+     }
+     #search-1{
+      width:30%;
+     }
+     #search-3{
+      width: 30%;
+     }
+    .m-b{
+      margin-bottom: 12px;
+    }
+    .img-setting{
+      /* width="277px" height="92px" */
+      width: 50%;
+      height: 50%;
+    }
+    .crossimage{
+      width:30px;
+      height: 30px;
+      position: relative;
+      
+      color:rgb(112,117,122);
+    }
+
+    @media screen and ( max-width:1250px )
+    {
+      #search-1{
+      width:26%;
+     }
+     #search-3{
+      width: 26%;
+     }
+     .input-container{
+         /* width:592px;  */
+         width: 48%;
+     
+    }
+   }
+    @media screen and ( max-width:1091px )
+    {
+      #search-1{
+      width:20%;
+     }
+     #search-3{
+      width: 20%;
+     }
+     .input-container{
+         /* width:592px;  */
+         width: 60%;
+     
+    }
+   }
+    @media screen and ( max-width:786px )
+    {
+      #search-1{
+      width:15%;
+     }
+     #search-3{
+      width: 15%;
+     }
+     .input-container{
+         /* width:592px;  */
+         width: 70%;
+     
+    }
+
+   }
+
+   @media screen and ( max-width:576px )
+    {
+      #search-1{
+      width:10%;
+     }
+     #search-3{
+      width: 10%;
+     }
+     .input-container{
+         /* width:592px;  */
+         width: 80%;
+     
+    }
+    #gws-output-pages-elements-homepage_additional_languages__als{font-size:x-small;}
+     #SIvCob{color:#4d5156;display:inline-block;line-height:18px;}
+
+
+   }
+
+
+   @media screen and ( max-width:460px )
+    {
+      #search-1{
+      width:4%;
+     }
+     #search-3{
+      width: 4%;
+     }
+     .input-container{
+         /* width:592px;  */
+         width: 92%;
+     
+    }
+    #sec2{
+        width:50%;
+      
+     }
+    
+     #sec3{
+        width:12%;
+    
+     }
+     #sec4{
+        width:12%;
+     }
+     #sec5{
+        width:12%;
+    
+     }
+     #gws-output-pages-elements-homepage_additional_languages__als{font-size:6px;}
+     #SIvCob{color:#4d5156;display:inline-block;line-height:8px;}
+
+
+
+   }
+     </style>
+   
+</head>
+<body>
+    
+ <div class="middle padding-middle ">
+<div style="text-align: center"><img src="./googlePage/googlelogo_color_272x92dp.png" class= "img-setting "/></div>
+ 
+</div>
+
+<div class="search-section" >
+    <!-- <input type="text" class="input-container"> -->
+<div ></div>
+  
+    <div class="input-container" style="margin-bottom: 15px;">
+      
+        <div class=" input-wrapper">
+         <div id="sec1"><i  style="padding:20px; font-size: 14px; color: #9aa0a6;"class="fa-solid fa-magnifying-glass"></i>  </div> 
+        <div id="sec2"><input id="text-box" type="text"></div>
+        <div id="sec5" style="display: none;"><i class="fa-solid fa-xmark oneb crossimage" onclick="handleClick();" data-bs-toggle="tooltip" data-bs-placement="bottom" title="clear" >
+      </i>
+        
+        </div>
+        <div id="sec3">
+         <img class="oneb" src="./googlePage/7123011_google_mic_icon.svg" width="35px" height="35px" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Search by Voice"/>
+         <!-- <i  class="fa-solid fa-microphone oneb" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Search by Voice"></i> -->
+      </div>
+
+        <div id="sec4">
+         <img src="./googlePage/searchbyimage.PNG" width="28px" height="28px" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Search by Image" class="oneb"/>
+         <!-- <i  class="fa-solid fa-image oneb" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Search by Image"></i> -->
+      </div>
+        <!-- <div><i class="fa-solid fa-image"></i></div>   -->
+    </div>
+<div id="search-3"></div>
+    </div>
+</div>
+<div class="middle">
+<div class="input-wrapper gap m-b" >
+   <div><button class="sbtn" onclick="handleSearch()">Google Search</button></div>
+   <div><button class="sbtn" onclick="handleSearch1()">I'm Feeling Lucky</button></div>
+</div>
+</div>
+<div>
+   <div class="vcVZ7d middle" id="gws-output-pages-elements-homepage_additional_languages__als">
+      <div id="SIvCob">Google offered in:  <a href="https://www.google.co.in/setprefs?sig=0_VrGY8QgbKvOCVaZO6vgVEEoOkuo%3D&amp;hl=hi&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwjhu_uM6K_7AhUI-yoKHU8MA_IQ2ZgBCBM">हिन्दी</a>    <a href="https://www.google.co.in/setprefs?sig=0_VrGY8QgbKvOCVaZO6vgVEEoOkuo%3D&amp;hl=bn&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwjhu_uM6K_7AhUI-yoKHU8MA_IQ2ZgBCBQ">বাংলা</a>    <a href="https://www.google.co.in/setprefs?sig=0_VrGY8QgbKvOCVaZO6vgVEEoOkuo%3D&amp;hl=te&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwjhu_uM6K_7AhUI-yoKHU8MA_IQ2ZgBCBU">తెలుగు</a>    <a href="https://www.google.co.in/setprefs?sig=0_VrGY8QgbKvOCVaZO6vgVEEoOkuo%3D&amp;hl=mr&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwjhu_uM6K_7AhUI-yoKHU8MA_IQ2ZgBCBY">मराठी</a>    <a href="https://www.google.co.in/setprefs?sig=0_VrGY8QgbKvOCVaZO6vgVEEoOkuo%3D&amp;hl=ta&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwjhu_uM6K_7AhUI-yoKHU8MA_IQ2ZgBCBc">தமிழ்</a>    <a href="https://www.google.co.in/setprefs?sig=0_VrGY8QgbKvOCVaZO6vgVEEoOkuo%3D&amp;hl=gu&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwjhu_uM6K_7AhUI-yoKHU8MA_IQ2ZgBCBg">ગુજરાતી</a>    <a href="https://www.google.co.in/setprefs?sig=0_VrGY8QgbKvOCVaZO6vgVEEoOkuo%3D&amp;hl=kn&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwjhu_uM6K_7AhUI-yoKHU8MA_IQ2ZgBCBk">ಕನ್ನಡ</a>    <a href="https://www.google.co.in/setprefs?sig=0_VrGY8QgbKvOCVaZO6vgVEEoOkuo%3D&amp;hl=ml&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwjhu_uM6K_7AhUI-yoKHU8MA_IQ2ZgBCBo">മലയാളം</a>    <a href="https://www.google.co.in/setprefs?sig=0_VrGY8QgbKvOCVaZO6vgVEEoOkuo%3D&amp;hl=pa&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwjhu_uM6K_7AhUI-yoKHU8MA_IQ2ZgBCBs">ਪੰਜਾਬੀ</a>  </div></div>
+   
+</div>
+ </div>
+
+ 
+    <!-- search icon  
+<i class="fa-solid fa-magnifying-glass"></i> -->
+<!-- <i class="fa-solid fa-magnifying-glass"></i>
+<i class="fa-solid fa-microphone"></i> -->
+<!-- <i class="fa-solid fa-image-polaroid-user"></i> -->
+<!-- <i class="fa-light fa-image-user"></i>
+<i class="fa-solid fa-image"></i> -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script> 
+<script>
+   const tooltips=document.querySelectorAll(".oneb");
+   tooltips.forEach(t=>{
+      new bootstrap.Tooltip(t)
+   })
+</script>
+<script>
+   function handleSearch()
+   {   let b= document.querySelectorAll(".sbtn");
+     b[0].classList.add("onSearchClick");
+      setTimeout(()=>{
+       
+         b[0].classList.remove("onSearchClick")
+      },1000)
+   }
+   function handleSearch1()
+   {   let b= document.querySelectorAll(".sbtn");
+     b[1].classList.add("onSearchClick");
+      setTimeout(()=>{
+       
+         b[1].classList.remove("onSearchClick")
+      },1000)
+   }
+   function handleClick()
+   {
+      document.getElementById("text-box").value="";
+   }
+   document.getElementById("text-box").addEventListener("input",(e)=>{
+      
+      if(e.target.value.length>=1)
+      {
+         console.log("triggered");
+   document.getElementById("sec5").style="display:block;"
+}
+     else{
+      document.getElementById("sec5").style.display="none";
+     }
+   })
+   
+</script>
+
+</body>
+</html>
