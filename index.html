@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google</title>
-    <link rel="icon" type="image/png" href="./logo.png" >
+    <link rel="icon" type="image/png" href="./logo.png" sizes="16x16 32x32" >
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -29,7 +29,7 @@
        
      } 
      .padding-middle{
-      padding-top:161px;
+      padding-top:10px;
         padding-bottom: 24px; 
      }   
      .input-container{
@@ -165,6 +165,17 @@
       
       color:rgb(112,117,122);
     }
+    .font-style-bottom{
+   font-size: 15px;
+    color: #70757a;
+}
+.bottom2-flex .left a,.bottom2-flex .right a{
+text-decoration: none;
+display: inline-block;
+padding:0 10px;
+font-size: 15px;
+    color: #70757a;
+}
 
     @media screen and ( max-width:1250px )
     {
@@ -207,7 +218,12 @@
          width: 70%;
      
     }
-
+    .bottom2-flex .left a{
+   font-size: 12px ;
+}
+.bottom2-flex .right a{
+   font-size: 12px ;
+}
    }
 
    @media screen and ( max-width:576px )
@@ -223,6 +239,16 @@
          width: 80%;
      
     }
+     .bottom2-flex a{
+   font-size: 8px;
+}
+.left a{
+font-size:9px !important;
+}
+.right a{
+   font-size: 9px !important;
+} 
+
     #gws-output-pages-elements-homepage_additional_languages__als{font-size:x-small;}
      #SIvCob{color:#4d5156;display:inline-block;line-height:18px;}
 
@@ -259,17 +285,113 @@
         width:12%;
     
      }
+     .left a{
+font-size:7px !important;
+padding:0 2px  !important;
+}
+.right a{
+   font-size: 7px !important;
+   padding: 0 2px  !important;
+}
      #gws-output-pages-elements-homepage_additional_languages__als{font-size:6px;}
      #SIvCob{color:#4d5156;display:inline-block;line-height:8px;}
+        
+}
+    
 
+   
+   .navbar{
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      flex-direction: row;
+      column-gap: 20px;
+      padding-top: 11px;
+      margin-right:15px;
+      height: 48px;
+      margin-top:3px;
+      
+    }
+    #nav4{
+      /* margin:8px; */
+      width:34px;
+      /* margin-right: */
+      height: 34px;
+      border-radius: 50%;
+      background-color:rgb(93,64,55);
+      color:white;
+      font-weight: 400;
+      font-size:17px;
+    /* padding: 4px;  */
+      padding:5px;
+      text-align: center;
+    }
+    #nav3{
+      width:38px;
+      height: 38px;
+      border-radius: 50%;
+      padding: 6px 9px;
+    }
+    #nav3:hover{
+      background-color:  rgba(60,64,67,.08);;
+    }
+    .tooltip-inner {
+    white-space:pre-wrap;
+}
+#nav1{
+text-decoration: none;
+color: rgba(0,0,0,.87);
+font: 13px/27px Roboto,Arial,sans-serif;
+line-height: 24px;
+}
+#nav1:hover,#nav2:hover{
+   text-decoration: underline;
+   
+}
+#nav2{
+text-decoration: none;
+color: rgba(0,0,0,.87);
+font: 13px/27px Roboto,Arial,sans-serif;
+line-height: 24px;
+}
+#bottom-1{
+position: absolute;
+height:50px;
+background-color: rgb(242,242,242);
+border-bottom:1px solid rgb(228,229,231);
+bottom:50px;
+width: 100%;
+padding: 15px 30px;
+}
+#bottom-2{
+position: absolute;
+height: 50px;
+background-color: rgb(242,242,242);
+border-top:1px solid rgb(228,229,231);
+bottom:0;
+width: 100%;
+padding: 15px 30px;
+}
+.bottom2-flex a:hover{
+   text-decoration: underline;
+}
+.bottom2-flex{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
 
-
-   }
+}
      </style>
    
 </head>
 <body>
-    
+<div class="navbar">
+  <a id="nav1" href="https://www.gmail.com">Gmail</a>
+  <a id="nav2" href="https://www.google.co.in/imghp?hl=en&ogbl">Images</a> 
+  <div id="nav3"><img src ="./transperentgrid.png" width="20px" height="20px" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Google apps" class="oneb" /></div>
+  <div id="nav4"><div  data-bs-toggle="tooltip" data-bs-placement="bottom" title="Google Account
+   Shakuntla Ravani shakuntla.ravani@gmail.com" class="oneb tooltip-inner ">S</div></div>
+</div>    
  <div class="middle padding-middle ">
 <div style="text-align: center"><img src="./googlelogo_color_272x92dp.png" class= "img-setting "/></div>
  
@@ -314,7 +436,27 @@
    
 </div>
  </div>
+  <div id="bottom-1" class="font-style-bottom">India</div>
+  <div id="bottom-2">
+   <div class="bottom2-flex">
+      <div class="left">
+      <a style="padding:0 0;" href="https://about.google/?utm_source=google-IN&utm_medium=referral&utm_campaign=hp-footer&fg=1" >About</a>
+      <a class="font-style-bottom"style="padding:0 10px; display:inline-block" href="https://ads.google.com/intl/en_in/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2m--ahpm-0000000114-0000000000&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a>
+      <a class="font-style-bottom"style="padding:0 10px; display:inline-block" href="https://www.google.com/intl/en_in/business/">Business</a>
+      <a class="font-style-bottom"style="padding:0 10px; display:inline-block" href="https://www.google.com/search/howsearchworks/?fg=1">How Search Works</a>
+      </div>
+     
 
+         <div class="right" >
+            <a  href="https://policies.google.com/privacy?hl=en-IN&fg=1">Privacy</a>
+            <a class="font-style-bottom"  href="https://policies.google.com/terms?hl=en-IN&fg=1">Terms</a>
+            <a class="font-style-bottom" >Setting</a>
+            
+            </div>
+
+    
+   </div>
+  </div>
  
     <!-- search icon  
 <i class="fa-solid fa-magnifying-glass"></i> -->
